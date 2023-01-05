@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Formula1;
+  src: url(Formula1-Regular_web_0.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Formula1bold;
+  src: url(Formula1-Bold_web_0.ttf);
+  font-style: bold;
+  font-weight: 700;
+}
+
+body {
+  font-family: Formula1bold;
+  color: red;
+  font-style: bold;
+}
+/* imagenes header */
+header {
+  background-image: url("images/max.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header.winner {
+  background-image: url("images/351981.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header.circuitos {
+  background-image: url("images/circuitos.jpg");
+  background-position: center;
+  background-size: cover;
+}
+header.escuderia {
+  background-image: url("images/pilotos.webp");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*CABECERA*/
+header {
+  width: 100%;
+  overflow: hidden;
+}
+table {
+  background-color: #fff;
+}
+a.activa {
+  background-color: #fff;
+  color: black;
+  border-radius: 15px;
+}
+a.activa:hover {
+  background-color: #fff;
+  color: black;
+}
+.fondo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.navegacion {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 250px;
+  margin: 15px;
+}
+
+.menu {
+  margin: 0;
+  width: 800px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: red;
+}
+
+.titular {
+  margin-top: 330px;
+  text-align: center;
+  font-size: 4em;
+  color: #ffd700;
+}
+
+input[type="search"] {
+  border: 3px solid black;
+  margin: 5px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+.rojo {
+  color: red;
+}
+
+.submenu {
+  color: black;
+  background: red;
+  background: linear-gradient(-88deg, red 0%, red 50%, #fff 124%);
+  margin: 3px;
+  border-radius: 15px;
+}
+
+.submenu:hover {
+  color: red;
+  background: black;
+  background: linear-gradient(-88deg, black 0%, black 50%, #fff 124%);
+}
+.navegacion * .dropdown-menu {
+  background-color: #ff000000;
+  border: none;
+}
+/*SECCION*/
+section {
+  padding: 50px 0px;
+  background-color: rgb(54, 50, 50);
+  text-align: center;
+}
+
+article {
+  width: 80%;
+  margin: 0 auto;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.secsecundario {
+  background-color: #fff;
+  display: flex;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section img {
+  border-radius: 0px 0px 100px 0px;
+}
+
+.imagen {
+  width: 250px;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.imagen:hover {
+  box-shadow: red 5px 5px;
+}
+
+.centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones {
+  padding: 10px;
+  border-radius: 5px;
+  color: red;
+  background: white;
+  /* background: linear-gradient(-88deg, red 0%, red 50%, #fff 124%); */
+}
+
+.botones:hover {
+  color: red;
+  background: black;
+  box-shadow: red 5px 5px;
+  /* background: linear-gradient(-88deg, black 0%, black 50%, #fff 124%); */
+}
+
+/*ASIDE*/
+.column {
+  float: right;
+  position: sticky;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.lateral {
+  list-style-type: none;
+  background-color: #364f7c;
+  padding: 5px 15px;
+  border-bottom: 1px solid black;
+}
+
+.izq {
+  float: left;
+}
+
+.clasi {
+  color: red;
+  background-color: #fff;
+}
+
+.ganador {
+  color: gold;
+}
+
+/* footer */
+footer {
+  display: block;
+  background: #04223b;
+  padding: 40px 0px;
+}
+
+footer p {
+  color: #fff;
+  margin: 30px;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+footer .navegacion {
+  justify-content: center;
+}
+
+/* multiplataforma */
+@media screen and (max-width: 800px) {
+  div.column {
+    display: none;
+  }
+
+  #circuitos tr td:nth-child(3) {
+    display: none;
+  }
+}
